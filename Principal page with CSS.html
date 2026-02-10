@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal page with CSS</title>
+    <style>
+        /* IMPORTACIÓN DE FUENTES */
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Stardos+Stencil:wght@400;700&display=swap');
+
+        body {
+            background-color: #1a1c1a; 
+            background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%),
+                              url('https://www.transparenttextures.com/patterns/dark-matter.png');
+            color: #d1d1d1;
+            font-family: 'Special Elite', 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            margin: auto;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        /* ID (#) PARA EL TÍTULO ÚNICO */
+        #titulo-principal {
+            font-family: 'Stardos Stencil', sans-serif;
+            font-size: 4rem;
+            color: #f2f2f2;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px 0px #3e443e, 6px 6px 15px rgba(0,0,0,0.8);
+            border-bottom: 2px solid #4a5d4a;
+            margin-bottom: 10px;
+        }
+
+        h2, h4 {
+            color: #8da38d;
+            font-family: 'Stardos Stencil', sans-serif;
+        }
+
+        /* CLASE (.link-tlou) PARA LOS ENLACES */
+        .link-tlou {
+            color: #e67e22;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .link-tlou:hover {
+            color: #f1c40f;
+            text-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+            text-decoration: underline;
+        }
+
+        /* CLASE (.parrafo-historia) PARA LOS BLOQUES DE TEXTO */
+        .parrafo-historia {
+            background: rgba(20, 20, 20, 0.7);
+            padding: 15px;
+            border-left: 3px solid #4a5d4a;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* CLASE (.foto-polaroid) PARA LAS IMÁGENES */
+        .foto-polaroid {
+            filter: sepia(30%) contrast(1.1) brightness(0.8);
+            border: 10px solid #f2f2f2;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+            transform: rotate(-1deg);
+            margin: 20px 0;
+            display: block;
+            border-bottom: 25px solid #f2f2f2;
+            transition: transform 0.3s;
+        }
+
+        .foto-polaroid:hover {
+            transform: rotate(0deg) scale(1.02);
+            filter: none;
+        }
+
+        ul { list-style: none; padding: 0; }
+
+        li h2 {
+            margin-top: 50px;
+            background: #2d332d;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 0 15px 15px 0;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo-principal">The Last of Us</h1>
+    <h4><a href="Table.html" class="link-tlou">Table</a></h4> 
+    <h4><a href="index.html" class="link-tlou">Basic Principal page</a></h4>
+    
+    <p class="parrafo-historia">The Last of Us is a video game about an apocalyptic world in which a fungus called Cordyceps has appeared, which brings out the most aggressive instincts in humans, making them look like zombies and not conscious of their actions, with no cure.</p>
+    
+    <p class="parrafo-historia">In the first game this saga has two installments you control a man named Joel, who, due to the apocalypse, lost his daughter and had to resort to smuggling various substances and weapons. One day, however, one of his few friends, Tess, tells him that this time she's going to smuggle a 14-year-old girl named Ellie. After a series of events, they realize that Ellie is no ordinary girl, she's immune to Cordyceps because she was bitten by an infected person some time ago, but showed no signs of the fungus affecting her.</p>
+
+    <hr style="border: 0; height: 1px; background: #4a5d4a; margin: 40px 0;">
+
+    <h2>Relevant characters:</h2>
+    
+    <ul>
+        <li>
+            <h2><a href="https://thelastofus.fandom.com/es/wiki/Joel_Miller" class="link-tlou">Joel Miller</a></h2>
+            <p class="parrafo-historia">Joel is a man of robust build and weathered features, his graying beard reflecting decades of brutal survival. A pragmatic and rugged man of few words, his alert gaze and cynical shell hide a fierce loyalty that makes him capable of any sacrifice for those he loves.</p> 
+            <img src="C:\Rumanía\Imagen_Joel_Miller.webp" alt="Joel Miller" width="400" class="foto-polaroid">
+        </li>
+
+        <li>
+            <h2><a href="https://thelastofus.fandom.com/es/wiki/Tess_Servopoulos" class="link-tlou">Tess Servopoulos</a></h2>
+            <p class="parrafo-historia">Tess is an athletic and calculating survivor whose hardened features reflect years in the black market. As the strategic mind of the duo, she is intelligent, pragmatic, and commands a natural authority. Beneath her weathered exterior, she is a fierce and relentless negotiator, capable of imposing respect in even the most hostile environments.</p>
+            <img src="C:\Rumanía\Imagen_Tess_Servopoulos.webp" alt="Tess Servopoulos" width="400" class="foto-polaroid">
+        </li>
+
+        <li>
+            <h2><a href="https://thelastofus.fandom.com/wiki/Ellie_Williams" class="link-tlou">Ellie Williams</a></h2>
+            <p class="parrafo-historia">Ellie is a slight young girl with a bold gaze and a rebellious spirit, defined by the loss of her innocence and the harshness of survival. She is witty, foul-mouthed, and brave, hiding a deep vulnerability and a chronic fear of loneliness behind her sarcasm. Beneath her fragile appearance lies a fierce loyalty and an unwavering determination that make her a true force of nature.</p>
+            <img src="C:\Rumanía\Imagen_Ellie_Williams.jpg" alt="Ellie Williams" width="300" class="foto-polaroid">
+        </li>
+    </ul>
+
+</body>
+</html>
